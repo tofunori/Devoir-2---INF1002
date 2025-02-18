@@ -1,16 +1,23 @@
+//---------------------------------------------------------------------------------------------
+// INF1002 - Devoir 2
+// Nom: Thierry Laurent St-Pierre
+//---------------------------------------------------------------------------------------------
+
 public class Joueur {
     private String nom;
     private String prenom;
     private int age;
 
-
+    // Constructeur
     public Joueur(String nom, String prenom, int age) {
         this.nom = nom;
         this.prenom = prenom;
         this.age = age;
         
     }
-
+    //-------------------------------------
+    // Getters 
+    //-------------------------------------
     public String getNom() {
         return nom;
     }
@@ -23,6 +30,9 @@ public class Joueur {
         return age;
     }
 
+    //-------------------------------------
+    // Setters
+    //-------------------------------------
 
     public void setNom(String nom) {
         this.nom = nom;
@@ -35,7 +45,7 @@ public class Joueur {
     public void setAge(int age) {
         this.age = age;
     }
-
+    // Méthode toString
     public String toString()
 {
     return prenom + " " + nom + ", " + age + " ans";

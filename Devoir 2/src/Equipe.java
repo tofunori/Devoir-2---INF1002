@@ -67,7 +67,7 @@ public class Equipe {
     
     public String afficherJoueurs() 
     {
-        String resultat = "Joueur de l'équipe"  + nom + ":\n";
+        String resultat = "Équipe" +" " + nom + ":\n";
         for (Joueur joueur : listeJoueurs)
         {
             resultat += joueur.toString() + "\n";

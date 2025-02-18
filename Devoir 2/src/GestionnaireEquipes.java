@@ -1,19 +1,22 @@
 public class GestionnaireEquipes {
 
     public static void main(String[] args) {
-        
-        Joueur joueur1 = new Joueur("Tremblay", "Jean", 20);
-        Joueur joueur2 = new Joueur("Lavoie", "Pierre", 22);
-        Joueur joueur3 = new Joueur("Gagnon", "Michel", 19);
-        Joueur joueur4 = new Joueur("Roy", "Philippe", 21);
-        Joueur joueur5 = new Joueur("Bouchard", "Marc", 18);
-        Joueur joueur6 = new Joueur("Fortin", "Luc", 23);
-        Joueur joueur7 = new Joueur("Lemieux", "Sylvain", 20);
-        Joueur joueur8 = new Joueur("Côté", "Paul", 19);
 
-        Equipe equipe1 = new Equipe("Les lions", Categories.SENIOR);
-        Equipe equipe2 = new Equipe("Les vampires", Categories.JUNIOR);
-      
+        // Création des joueurs
+        Joueur joueur1 = new Joueur("Bertrand", "Janette", 100);
+        Joueur joueur2 = new Joueur("Lavoie", "Pierre", 24);
+        Joueur joueur3 = new Joueur("Gagnon", "Michel", 19);
+        Joueur joueur4 = new Joueur("Roy", "Philippe", 31);
+        Joueur joueur5 = new Joueur("Bouchard", "Jean-Marc", 97);
+        Joueur joueur6 = new Joueur("Dion", "Jean-Philippe", 53);
+        Joueur joueur7 = new Joueur("Lemieux", "Sylvain", 20);
+        Joueur joueur8 = new Joueur("Côté", "Germain", 87);
+
+        // Création des équipes
+        Equipe equipe1 = new Equipe("Les Lions", Categories.SENIOR);
+        Equipe equipe2 = new Equipe("Les Vampires", Categories.JUNIOR);
+
+        // Ajout des joueurs dans les équipes
         equipe1.ajouterJoueur(joueur1);
         equipe1.ajouterJoueur(joueur2);
         equipe1.ajouterJoueur(joueur3);
@@ -24,26 +27,32 @@ public class GestionnaireEquipes {
         equipe2.ajouterJoueur(joueur7);
         equipe2.ajouterJoueur(joueur8);
 
+        // Parties gagnées par les équipes
         equipe1.setNombrePartiesGagnees(4); 
         equipe2.setNombrePartiesGagnees(5);
 
+        // Ajout de parties gagnées pour l'équipe 1
         equipe1.ajoutPartieGagnee(2);
 
+        // Affichage les équipes qui ont gagné le plus de parties
         if (equipe1.getNombrePartiesGagnees() > equipe2.getNombrePartiesGagnees())
         {
-            System.out.println("L'équipe 1 a gagné plus de parties que l'équipe 2");
+            System.out.println("L'équipe 1 a gagné plus de parties que l'équipe 2\n");
         }
         else
         {
             System.out.println("L'équipe 2 a gagné plus de parties que l'équipe 1");
         }
 
+        // Affichage du nombre de joueurs dans chaque équipe
         System.out.println("Nombre de joueurs dans l'équipe 1: " + equipe1.nombreJoueurs());
-        System.out.println("Nombre de joueurs dans l'équipe 2: " + equipe2.nombreJoueurs());
-        
+        System.out.println("Nombre de joueurs dans l'équipe 2: " + equipe2.nombreJoueurs() + "\n");
+
+        // Suppression d'un joueur dans l'équipe 1 et affichage du nombre de joueurs
         equipe1.supprimerJoueur(joueur3);
-        System.out.println("Nombre de joueurs dans l'équipe 1 après suppression: " + equipe1.nombreJoueurs());
-        
+        System.out.println("Nombre de joueurs dans l'équipe 1 après suppression: " + equipe1.nombreJoueurs() + "\n");
+
+        // Affichage des joueurs dans chaque équipe
         System.out.println((equipe1.afficherJoueurs()));
         System.out.println((equipe2.afficherJoueurs()));
         
