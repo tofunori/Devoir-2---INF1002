@@ -1,3 +1,12 @@
+//********************************************************************
+//Devoir 1 - INF1002
+//Cours : Devoir 2  - 18 février 2025
+//
+//Auteurs : Thierry Laurent-St-Pierre, Jaures Djabou Djietcheu, Lyann Duval,
+//          Ange Pernelle Pengou Fopossi
+//
+//Description : Classe Equipe qui permet de créer des équipes
+//********************************************************************
 import java.util.ArrayList;
 
 public class Equipe {
