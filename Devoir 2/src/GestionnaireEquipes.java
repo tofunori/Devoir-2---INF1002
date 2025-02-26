@@ -66,7 +66,7 @@ public class GestionnaireEquipes {
         System.out.println("Nombre de joueurs dans l'équipe 1: " + equipe1.nombreJoueurs());
         System.out.println("Nombre de joueurs dans l'équipe 2: " + equipe2.nombreJoueurs() + "\n");
 
-        // Affichage de suppression d'un joueur dans l'équipe 1
+        // Suppression du quatrième joueur de l'équipe 1
         equipe1.supprimerJoueur(3);
         System.out.println("Nombre de joueurs dans l'équipe 1 après suppression: " + equipe1.nombreJoueurs() + "\n");
 
