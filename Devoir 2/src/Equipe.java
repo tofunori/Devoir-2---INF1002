@@ -1,6 +1,6 @@
 //********************************************************************
 //Devoir 1 - INF1002
-//Cours : Devoir 2  - 18 février 2025
+//Cours : Devoir 2  - 26 février 2025
 //
 //Auteurs : Thierry Laurent-St-Pierre, Jaures Djabou Djietcheu, Lyann Duval,
 //          Ange Pernelle Pengou Fopossi
@@ -53,7 +53,7 @@ public class Equipe {
     // Méthodes qui permettent de gérer les joueurs
     //-------------------------------------
 
-    public void ajoutPartieGagnee(int nombre)
+    public void ajoutPartiesGagnees(int nombre)
     {
         nombrePartiesGagnees += nombre;
     }
@@ -66,9 +66,11 @@ public class Equipe {
     {
         listeJoueurs.add(joueur);
     }
-    public void supprimerJoueur(Joueur joueur)
+    public void supprimerJoueur(int indice)
     {
-        listeJoueurs.remove(joueur);
+        if (indice >= 0 && indice < listeJoueurs.size()) {
+            listeJoueurs.remove(indice);
+        }
     }   
     //-------------------------------------
     // Méthodes qui permettent d'afficher les joueurs
