@@ -68,9 +68,7 @@ public class Equipe {
     }
     public void supprimerJoueur(int indice)
     {
-        if (indice >= 0 && indice < listeJoueurs.size()) {
-            listeJoueurs.remove(indice);
-        }
+        listeJoueurs.remove(indice);
     }   
     //-------------------------------------
     // Méthodes qui permettent d'afficher les joueurs
