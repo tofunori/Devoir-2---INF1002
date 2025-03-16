@@ -1,3 +1,13 @@
+/*La classe moto est celle contenant les variables d'instance d'une moto
+ *  constructeur motos 
+ * ainsi que les methodes nous permettant de realiser des operations telles que
+ * - les accesseurs ( getkilometrage)
+ * - une methode ajoutkilometrage pour ajouter le nombre de kilometrage d'une moto
+ * - et une methode ToString pour l'affichage d'une ou des  moto(s) console.
+ *
+ * 
+ *
+ */
 package src;
 
 public class Moto {
@@ -5,9 +15,9 @@ public class Moto {
 	private String modele;
 	private int annee;
 	private String couleur;
-	private int kilometrage;
+	private double kilometrage;
 	
-	public Moto(String marque, String modele, int annee, String couleur, int kilometrage) {
+	public Moto(String marque, String modele, int annee, String couleur, double kilometrage) {
 		marque = marque;
 		modele = modele;
 		annee = annee;
