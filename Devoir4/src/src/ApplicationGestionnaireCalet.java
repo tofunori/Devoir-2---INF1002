@@ -1,52 +1,38 @@
-/*                            Devoir nÂ° 2
-                           INF 1002 (java)
- *                       Session dâ€™automne 2022
- *         
- *                       travail fait par :
- *                       
-             ---Fouodji Bokou, Teddy Pollar Teddy.Pollar.Fouodji.Bokou@uqtr.ca
-
-             ---Faye, Youssouf Youssouf.Faye@uqtr.ca
-
-             ---Fosnea, Vadim Vadim.Fosnea@uqtr.ca
-
- *            ---Ewetola, Firaas Esso-Ninam Firaas.Esso-Ninam.Ewetola@uqtr.ca
- *            
- *            ##Description##
+/*   ##Description##
 
  * La classe ApplicationGestionnaiereChalet est la  classe ou  la gestion du chalet et des employes se passent .
 
   elle contient :
   -une methode pilote
 
- et  plusieurs méthodes( en static pour la plus part) qui font appel au methode declarer
+ et  plusieurs mÃ©thodes( en static pour la plus part) qui font appel au methode declarer
   dans la classe Employe,chalet et GestionnaireChalet :
 
-	- la méthode menuPrincipale()
+	- la mÃ©thode menuPrincipale()
 	affiche le menu principale
 	
-- la méthode menuemploye23()
+- la mÃ©thode menuemploye23()
 	affiche le menu employe
 	
-	- la méthode menuemployeur90()
+	- la mÃ©thode menuemployeur90()
 	affiche le menu du proprietaire
 	
-	- la méthode menuGerercgalet()
+	- la mÃ©thode menuGerercgalet()
 	affiche le menu  de gestion de chalet(ajout suppression)
 	
-	- la méthode menuGereremploye()
+	- la mÃ©thode menuGereremploye()
 	affiche le menu  de gestion d'un employe(ajout suppression)
 	
-	- la méthode menulocation()
+	- la mÃ©thode menulocation()
 	affiche le menu  de gestion de chalet(location liberation)
 	
-	- la méthode menuassocier()
+	- la mÃ©thode menuassocier()
 	affiche le menu menu de gestion de chalet(associer dissocier)
 	
-	- la méthode actionEmploye()
+	- la mÃ©thode actionEmploye()
 	regroupe tous les actions que faire un employe
 	
-	 -la méthode modifierdiponibilite
+	 -la mÃ©thode modifierdiponibilite
        qui modifie la disponibilite d'un employe
 
 	
@@ -80,8 +66,8 @@ public class ApplicationGestionnaireCalet {
 	public static  void menuEmploye23() {
 
 		System.out.println("*************GESTION EMPLOYE*************");
-		System.out.println("1-Voir mes disponibilités");
-		System.out.println("2-Modifier ma disponibilité pour une journée");
+		System.out.println("1-Voir mes disponibilitÃ©s");
+		System.out.println("2-Modifier ma disponibilitÃ© pour une journÃ©e");
 		System.out.println("3-Consulter mes chalets");
 		System.out.println("4-Voir mon salaire ");
 		System.out.println("5-Revenir au menu principal");
@@ -91,17 +77,17 @@ public class ApplicationGestionnaireCalet {
 	//menu proprietaire
 	public static void menueEmployeur90() {
 		System.out.println("*************ADMINISTRATION*************");
-		System.out.println("1-Afficher la liste des employés avec leurs caractéristiques");
-		System.out.println("2-Afficher la liste des chalets avec leurs caractéristiques");
-		System.out.println("3-Afficher le nombre d’employés");
+		System.out.println("1-Afficher la liste des employÃ©s avec leurs caractÃ©ristiques");
+		System.out.println("2-Afficher la liste des chalets avec leurs caractÃ©ristiques");
+		System.out.println("3-Afficher le nombre dâ€™employÃ©s");
 		System.out.println("4-Afficher le nombre de chalets");
-		System.out.println("5-Gérer les employés");
-		System.out.println("6-Gérer les chalets");
-		System.out.println("7-Modifier le salaire d’un employé");
-		System.out.println("8-Comparer deux employés selon leur salaire");
-		System.out.println("9-Afficher les disponibilités d’un employé ");
-		System.out.println("10-Afficher les chalets associés à un employé");
-		System.out.println("11-Gérer les chalets associés aux employés");
+		System.out.println("5-GÃ©rer les employÃ©s");
+		System.out.println("6-GÃ©rer les chalets");
+		System.out.println("7-Modifier le salaire dâ€™un employÃ©");
+		System.out.println("8-Comparer deux employÃ©s selon leur salaire");
+		System.out.println("9-Afficher les disponibilitÃ©s dâ€™un employÃ© ");
+		System.out.println("10-Afficher les chalets associÃ©s Ã  un employÃ©");
+		System.out.println("11-GÃ©rer les chalets associÃ©s aux employÃ©s");
 		System.out.println("12-Louer ou liberer un chalet");
 		System.out.println("13-Revenir au menu principal");
 		System.out.print("Entrer votre choix:");
@@ -581,7 +567,7 @@ public class ApplicationGestionnaireCalet {
 				actionProprietaire();
 				break;
 			case 3:
-				System.out.println("Application fermée");
+				System.out.println("Application fermÃ©e");
 				return;
 			default :
 				System.out.println("Choix invalid, choix possible[1-3]");
